@@ -25,7 +25,8 @@ with open('candidates.json', 'r', encoding='utf-8') as f:
 
 
      @app.route("/skills/<skill>")
-     def skills(skill):        s = ''
+     def skills(skill):
+         s = ''
          for i in result:
              if skill in i['skills']:
                  s += f"<br>{i['name']} <br> {i['position']}<br> {i['skills']}<br>"
@@ -37,6 +38,6 @@ with open('candidates.json', 'r', encoding='utf-8') as f:
 
 
 
-     app.run(debug=True)
+     app.run()
 
 
