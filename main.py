@@ -32,7 +32,7 @@ with open('candidates.json', 'r', encoding='utf-8') as f:
                  s += f"<br>{i['name']} <br> {i['position']}<br> {i['skills']}<br>"
          return s
 
-
+#fgdfvbf
 
 
 
